@@ -20,6 +20,6 @@ That's where the Phipeline comes into play.
 You create a Podcast in the phipeline DB and connect it (based on a web hook) to a Auphonic preset, which is possible thanks to the Auphonic API.
 After that, every new Production based on this preset will automagically be added to this Podcast and stored in Phipeline's DB.
 
-Now you can have different Publishing Pipeline Steps to generate a feed, build a website, or just copy the DB content somewhere. This can also include a message on Twitter with the link to the new episode. But the important part is that every publishing output can be, *but does not has to have* a dependence on other publishing outputs. Why should my RSS-feed be in any way related to the frontend of my choice? Why should it even be on the same server as the website? Why don't we put it for example on the CDN we use for our audio files, as a static document?
+Now you can have different Publishing Pipeline Steps to generate a feed, build a website, or just copy the DB content somewhere. This can also include a message on Twitter with the link to the new episode. But the important part is that every publishing output can be, *but does not have to be* dependent on other publishing outputs. Why should my RSS-feed be in any way related to the frontend of my choice? Why should it even be on the same server as the website? Why don't we put it for example on the CDN we use for our audio files, as a static document?
 
 So that's my goal, let's code.
